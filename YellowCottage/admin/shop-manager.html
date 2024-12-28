@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YellowCottage - Shop Manager</title>
+    <link href="https://webfontworld.github.io/sandbox/PFStardust.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+    <header class="admin-header">
+        <h1>Shop Manager</h1>
+        <div class="admin-nav">
+            <button id="addProductBtn">상품 추가</button>
+            <button id="logoutBtn">로그아웃</button>
+        </div>
+    </header>
+
+    <main class="admin-main">
+        <!-- 상품 추가/수정 폼 -->
+        <div id="productForm" class="product-form" style="display: none;">
+            <h2>상품 추가/수정</h2>
+            <form id="shopItemForm">
+                <div class="form-group">
+                    <label for="productName">상품명</label>
+                    <input type="text" id="productName" required>
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">가격</label>
+                    <input type="number" id="productPrice" required>
+                </div>
+                <div class="form-group">
+                    <label for="productImage">이미지</label>
+                    <input type="file" id="productImage" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="productLink">구매 링크</label>
+                    <input type="url" id="productLink">
+                </div>
+                <div class="form-buttons">
+                    <button type="submit">저장</button>
+                    <button type="button" onclick="closeForm()">취소</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- 상품 목록 -->
+        <div class="product-list">
+            <h2>상품 목록</h2>
+            <div class="product-grid" id="productList">
+                <!-- 상품들이 여기에 동적으로 추가됨 -->
+            </div>
+        </div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html> 

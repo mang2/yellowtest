@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YellowCottage - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-translate="home">Home</a></li>
+                <li><a href="music.html" data-translate="music">Music</a></li>
+                <li><a href="tour.html" data-translate="tour">Tour</a></li>
+                <li><a href="video.html" data-translate="video">Video</a></li>
+                <li><a href="shop.html" data-translate="shop">Shop</a></li>
+                <li><a href="contact.html" data-translate="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <div class="section-header">
+                <a href="index.html" class="back-button">&lt;--</a>
+                <h2 data-translate="contact">Contact</h2>
+            </div>
+            <div class="contact-form">
+                <form action="mailto:yellowcottage.music@gmail.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name" data-translate="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-translate="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" data-translate="send">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 YellowCottage. All Rights Reserved.</p>
+        <a href="#" data-translate="privacyPolicy">Privacy Policy</a>
+    </footer>
+
+    <script src="js/language.js"></script>
+    <script src="js/scroll.js"></script>
+</body>
+</html> 
