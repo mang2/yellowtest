@@ -68,9 +68,31 @@ section {
     border-bottom: 3px dashed #FCEDBE;
 }
 
+/* index 페이지의 섹션 배경색 */
+.home #music {
+    background-color: #E8F5E9;
+    border-bottom: 3px dashed #fff;
+}
+
+.home #video {
+    background-color: #FFEBEE;
+    border-bottom: 3px dashed #fff;
+}
+
+.home #tour {
+    background-color: #E1F5FE;
+    border-bottom: 3px dashed #fff;
+}
+
+.home #shop {
+    background-color: #F3E5F5;
+    border-bottom: 3px dashed #fff;
+}
+
+/* 기존의 짝수 섹션 스타일 제거 */
 section:nth-child(even) {
-    background: #FCEDBE;
-    border-bottom: 3px dashed #FED46E;
+    background: inherit;
+    border-bottom: 3px dashed #fff;
 }
 
 section:last-child {
@@ -323,7 +345,7 @@ textarea {
 }
 
 .album-item {
-    background: #fff;
+    background: transparent;
     text-align: center;
     padding: 1rem;
 }
@@ -552,7 +574,7 @@ textarea {
 }
 
 .shop-item {
-    background: white;
+    background: transparent;
     text-align: center;
     padding: 1rem;
     border: 1px solid #FCEDBE;
@@ -677,4 +699,38 @@ h1, h2, h3, h4, h5, h6,
     * {
         font-family: 'PFStardust', 'PFStardust-Small', sans-serif !important;
     }
+}
+
+/* Section Header Background Styles */
+.section-header {
+    padding: 2rem;
+    margin-bottom: 3rem;
+    margin-top: -4rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
+    box-sizing: border-box;
+    position: relative;
+    left: 0;
+    width: calc(100% + 4rem);  /* section의 padding을 고려한 너비 */
+}
+
+/* 각 페이지별 타이틀 배경색 커스터마이징 */
+#music .section-header {
+    background-color: #E8F5E9;  /* 연한 초록색 */
+}
+
+#video .section-header {
+    background-color: #FFEBEE;  /* 연한 빨간색 (contact와 동일) */
+}
+
+#tour .section-header {
+    background-color: #E1F5FE;  /* 하늘색 */
+}
+
+#shop .section-header {
+    background-color: #F3E5F5;  /* 연한 보라색 */
+}
+
+#contact .section-header {
+    background-color: #FFEBEE;  /* 연한 빨간색 */
 } 
