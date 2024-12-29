@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YellowCottage</title>
+    <!-- PF스타더스트 폰트 직접 스타일 추가 -->
+    <style>
+        @font-face {
+            font-family: 'PFStardust';
+            src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/PFStardust.woff2') format('woff2'),
+                 url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/PFStardust.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hero-image">
+            <img src="DSCF7492.jpeg" alt="YellowCottage Main">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="music.html" data-translate="music">Music</a></li>
+                <li><a href="tour.html" data-translate="tour">Tour</a></li>
+                <li><a href="video.html" data-translate="video">Video</a></li>
+                <li><a href="shop.html" data-translate="shop">Shop</a></li>
+                <li><a href="contact.html" data-translate="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="music">
+            <h2 data-translate="music">Music</h2>
+            <div class="album-grid">
+                <div class="album-item">
+                    <img src="images/test.jpg" alt="BLUE FOR US">
+                    <h3>BLUE FOR US</h3>
+                    <p class="album-year">2019</p>
+                    <div class="album-links">
+                        <a href="https://open.spotify.com/album/0yFtDWqfIODJvtgb3tA2aj" class="stream-link">Spotify</a>
+                        <a href="#" class="stream-link">Apple Music</a>
+                        <a href="#" class="stream-link">Bandcamp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="section-link">
+                <a href="music.html" class="view-more" data-translate="viewMore">View More</a>
+            </div>
+        </section>
+
+        <section id="tour">
+            <h2 data-translate="tour">Tour</h2>
+            <div class="bandsintown-widget">
+                <!-- 임시 메시지 -->
+                <div class="no-tour-message">
+                    <p data-translate="noTour">예정 공연이 없습니다</p>
+                </div>
+                
+                <!-- Bandsintown 위젯 (현재는 주석 처리) -->
+                <!--
+                <a class="bit-widget-initializer" 
+                   data-artist-name="yellowcottage" 
+                   data-display-local-dates="false" 
+                   data-display-past-dates="true" 
+                   data-auto-style="false" 
+                   data-text-color="#333333" 
+                   data-link-color="#FCEDBE" 
+                   data-background-color="transparent" 
+                   data-display-limit="15" 
+                   data-link-text-color="#333333" 
+                   data-display-lineup="false" 
+                   data-display-play-my-city="true" 
+                   data-separator-color="rgba(252, 237, 190, 0.5)">
+                </a>
+                -->
+            </div>
+            <div class="section-link">
+                <a href="tour.html" class="view-more" data-translate="viewMore">View More</a>
+            </div>
+        </section>
+
+        <section id="video">
+            <h2 data-translate="video">Video</h2>
+            <div class="video-grid">
+                <div class="video-item">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/r1IhK6WM1A0" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="section-link">
+                <a href="video.html" class="view-more" data-translate="viewMore">View More</a>
+            </div>
+        </section>
+
+        <section id="shop">
+            <h2 data-translate="shop">Shop</h2>
+            <div class="store-links">
+                <a href="#" class="domestic" data-translate="domesticStore">Domestic Store</a>
+                <a href="#" class="international" data-translate="internationalStore">International Store</a>
+            </div>
+            <div class="section-link">
+                <a href="shop.html" class="view-more" data-translate="viewMore">View More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 YellowCottage. All Rights Reserved.</p>
+        <a href="#" data-translate="privacyPolicy">Privacy Policy</a>
+    </footer>
+
+    <script src="js/language.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/components.js"></script>
+</body>
+</html> 

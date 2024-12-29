@@ -1,0 +1,11 @@
+# 디렉토리 리스팅 비활성화
+Options -Indexes
+
+# index.html로 리다이렉트
+DirectoryIndex index.html
+
+# 직접적인 파일 접근 제한 (선택사항)
+<FilesMatch "^(?!index\.html|shop-manager\.html).*$">
+    Order deny,allow
+    Deny from all
+</FilesMatch> 

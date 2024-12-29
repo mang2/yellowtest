@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YellowCottage - Contact</title>
+    <!-- PF스타더스트 폰트 직접 스타일 추가 -->
+    <style>
+        @font-face {
+            font-family: 'PFStardust';
+            src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/PFStardust.woff2') format('woff2'),
+                 url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/PFStardust.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" data-translate="home">Home</a></li>
+                <li><a href="music.html" data-translate="music">Music</a></li>
+                <li><a href="tour.html" data-translate="tour">Tour</a></li>
+                <li><a href="video.html" data-translate="video">Video</a></li>
+                <li><a href="shop.html" data-translate="shop">Shop</a></li>
+                <li><a href="contact.html" data-translate="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <div class="section-header">
+                <a href="index.html" class="back-button">&lt;--</a>
+                <h2 data-translate="contact">Contact</h2>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-translate="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-translate="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-translate="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" data-translate="send">Send</button>
+                </form>
+                <div id="successMessage" class="success-message" style="display: none;">
+                    메시지가 성공적으로 전송되었습니다.
+                </div>
+                <div id="errorMessage" class="error-message" style="display: none;">
+                    메시지 전송에 실패했습니다. 다시 시도해주세요.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 YellowCottage. All Rights Reserved.</p>
+        <a href="#" data-translate="privacyPolicy">Privacy Policy</a>
+    </footer>
+
+    <script src="js/language.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html> 
