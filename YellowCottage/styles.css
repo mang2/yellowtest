@@ -1,0 +1,664 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PFStardust', sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(100%);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(252, 237, 190, 0.95);
+    padding: 1rem;
+    z-index: 100;
+}
+
+nav.bottom {
+    transform: translateY(0);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    font-family: 'PFStardust', sans-serif;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Section Common Styles */
+main {
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+section {
+    background: #fff;
+    padding: 4rem 2rem;
+    border-bottom: 3px dashed #FCEDBE;
+}
+
+section:nth-child(even) {
+    background: #FCEDBE;
+    border-bottom: 3px dashed #FED46E;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    font-family: 'PFStardust', sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.album-grid,
+.shop-items,
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Subscription Form Styles */
+.subscribe-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.subscribe-form input {
+    font-family: 'PFStardust', sans-serif;
+    flex: 1;
+    border: 2px solid #FCEDBE;
+    padding: 0.5rem;
+}
+
+.subscribe-form input:focus {
+    outline: none;
+    border-color: #FED46E;
+}
+
+button {
+    font-family: 'PFStardust', sans-serif;
+    padding: 0.5rem 1rem;
+    background: #FCEDBE;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #FED46E;
+}
+
+/* Footer Styles */
+footer {
+    background: #FCEDBE;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer a {
+    color: #333;
+}
+
+/* Hero Image Styles */
+.hero-image {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+    .subscribe-form {
+        flex-direction: column;
+    }
+
+    .hero-image {
+        height: 60vh;
+    }
+
+    .section-header {
+        padding: 0 1rem;
+    }
+
+    .back-button {
+        font-size: 1rem;
+        padding: 0.3rem;
+    }
+
+    .album-item {
+        padding: 0.5rem;
+    }
+
+    .album-grid {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .track-list {
+        padding: 0 0.5rem;
+    }
+
+    .stream-link {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .album-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    nav {
+        padding: 0.8rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* 더 작은 화면을 위한 추가 미디어 쿼리 */
+@media (max-width: 480px) {
+    .album-item img {
+        max-width: 250px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .track-list ol {
+        max-width: 100%;
+    }
+
+    nav ul {
+        gap: 0.8rem;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+}
+
+/* Store Links Styles */
+.store-links a {
+    font-family: 'PFStardust', sans-serif;
+    background: #FCEDBE;
+    color: #333;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.store-links a:hover {
+    background: #FED46E;
+}
+
+/* About 섹션 스타일 제거 */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: 'PFStardust', sans-serif;
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #FCEDBE;
+    background: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #FED46E;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+input,
+textarea {
+    font-family: 'PFStardust', sans-serif;
+}
+
+/* Album Grid Styles */
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.album-item {
+    background: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.album-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+.album-item h3 {
+    font-family: 'PFStardust', sans-serif;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.album-year {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.album-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.stream-link {
+    font-family: 'PFStardust', sans-serif;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #FCEDBE;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.stream-link:hover {
+    background: #FED46E;
+}
+
+/* Spotify Embed Styles */
+.spotify-embed {
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* iframe 스타일 제거 (인라인 스타일로 대체) */ 
+
+/* Section Header Styles */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.back-button {
+    position: absolute;
+    left: 0;
+    font-family: 'PFStardust', sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.back-button:hover {
+    transform: translateX(-5px);
+}
+
+/* 기존 h2 스타일 수정 */
+.section-header h2 {
+    margin-bottom: 0;
+}
+
+/* Track List Styles */
+.track-list {
+    margin: 1rem 0;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.track-list ol {
+    list-style-position: inside;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+}
+
+.track-list li {
+    font-family: 'PFStardust', sans-serif;
+    padding: 0.3rem 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+/* 트랙 번호 스타일 */
+.track-list li::marker {
+    font-family: 'PFStardust', sans-serif;
+    color: #333;
+}
+
+/* 트랙 제목 스타일 */
+.track-title {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+/* 트랙 길이 스타일 */
+.track-duration {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Video Grid Styles */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 비율 */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-item {
+    margin-bottom: 2rem;
+}
+
+.video-title {
+    margin: 1rem 0;
+    font-family: 'PFStardust', sans-serif;
+    color: #333;
+}
+
+/* Section Link Styles */
+.section-link {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.view-more {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: #FCEDBE;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    font-family: 'PFStardust', sans-serif;
+}
+
+.view-more:hover {
+    background: #FED46E;
+}
+
+/* Tour Item Styles */
+.tour-item {
+    background: #fff;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tour-date {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.tour-venue {
+    color: #333;
+    margin-bottom: 0.3rem;
+}
+
+.tour-location {
+    color: #666;
+}
+
+/* Bandsintown Widget Styles */
+.bandsintown-widget {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+    .bandsintown-widget {
+        padding: 1rem;
+    }
+}
+
+/* No Tour Message Styles */
+.no-tour-message {
+    text-align: center;
+    padding: 3rem 1rem;
+    font-family: 'PFStardust', sans-serif;
+    color: #333;
+}
+
+.no-tour-message p {
+    font-size: 1.2rem;
+}
+
+/* Shop Grid Styles */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shop-item {
+    background: white;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #FCEDBE;
+    border-radius: 4px;
+}
+
+.item-image {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.item-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.item-title {
+    font-family: 'PFStardust', sans-serif;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.item-price {
+    color: #666;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.item-description {
+    color: #666;
+    margin: 0.5rem 0;
+    font-size: 0.9em;
+}
+
+.buy-button {
+    font-family: 'PFStardust', sans-serif;
+    padding: 0.5rem 1.5rem;
+    background: #FCEDBE;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 1rem;
+}
+
+.buy-button:hover {
+    background: #FED46E;
+}
+
+/* Admin Link Style */
+.admin-link {
+    opacity: 0.3;
+    font-size: 0.8em;
+    margin-left: 1rem;
+    transition: opacity 0.3s ease;
+}
+
+.admin-link:hover {
+    opacity: 1;
+}
+
+.success-message {
+    background: #e0f2e9;
+    color: #156c3c;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.error-message {
+    background: #fde8e8;
+    color: #c81e1e;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* 기본 폰트 설정 */
+body, 
+input, 
+textarea, 
+button,
+nav a,
+h1, h2, h3, h4, h5, h6,
+.stream-link,
+.store-links a,
+.view-more,
+.back-button,
+.item-title,
+.track-list li,
+.track-list li::marker {
+    font-family: 'PFStardust', sans-serif !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* 기존 스타일 유지 */
+    nav a {
+        font-family: 'PFStardust', sans-serif !important;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+
+    /* 다른 모바일 텍스트 요소들도 폰트 강제 적용 */
+    .item-title,
+    .item-price,
+    .item-description,
+    button,
+    input,
+    textarea,
+    .track-list li,
+    .back-button {
+        font-family: 'PFStardust', sans-serif !important;
+    }
+} 
