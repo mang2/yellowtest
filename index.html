@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YellowCottage</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://webfontworld.github.io/sandbox/PFStardust.css" rel="stylesheet">
+    <!-- 폰트 직접 로드 -->
+    <style>
+        @font-face {
+            font-family: 'PFStardust';
+            src: url('fonts/PFStardust.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        @font-face {
+            font-family: 'PFStardust';
+            src: url('fonts/PFStardust-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: block;
+        }
+        * {
+            font-family: 'PFStardust', sans-serif !important;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>

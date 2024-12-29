@@ -1,64 +1,8 @@
-/* 폰트 정의를 최상단에 배치 */
-/* 큰 글씨체 */
-@font-face {
-    font-family: 'PFStardust';
-    src: url('fonts/PFStardust.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+/* 기본 스타일 */
+body {
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
 }
 
-@font-face {
-    font-family: 'PFStardust';
-    src: url('fonts/PFStardust-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: block;
-}
-
-@font-face {
-    font-family: 'PFStardust';
-    src: url('fonts/PFStardust-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: block;
-}
-
-/* 작은 글씨체 */
-@font-face {
-    font-family: 'PFStardust-Small';
-    src: url('fonts/PFStardust-Small.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-
-@font-face {
-    font-family: 'PFStardust-Small';
-    src: url('fonts/PFStardust-SmallBold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-    font-display: block;
-}
-
-@font-face {
-    font-family: 'PFStardust-Small';
-    src: url('fonts/PFStardust-SmallExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: block;
-}
-
-/* 모든 요소에 폰트 강제 적용 */
-* {
-    font-family: 'PFStardust', 'PFStardust-Small', sans-serif !important;
-}
-
-/* 모바일 전용 폰트 설정 */
-@media screen and (max-width: 768px) {
-    * {
-        font-family: 'PFStardust', 'PFStardust-Small', sans-serif !important;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-} 
+/* 나머지 스타일은 유지... */ 
