@@ -2,7 +2,7 @@
 /* 큰 글씨체 */
 @font-face {
     font-family: 'PFStardust';
-    src: url('../fonts/PFStardust.ttf') format('truetype');
+    src: url('./fonts/PFStardust.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'PFStardust';
-    src: url('../fonts/PFStardust-Bold.ttf') format('truetype');
+    src: url('./fonts/PFStardust-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
     font-family: 'PFStardust';
-    src: url('../fonts/PFStardust-ExtraBold.ttf') format('truetype');
+    src: url('./fonts/PFStardust-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -27,7 +27,7 @@
 /* 작은 글씨체 */
 @font-face {
     font-family: 'PFStardust-Small';
-    src: url('../fonts/PFStardust-Small.ttf') format('truetype');
+    src: url('./fonts/PFStardust-Small.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -35,7 +35,7 @@
 
 @font-face {
     font-family: 'PFStardust-Small';
-    src: url('../fonts/PFStardust-SmallBold.ttf') format('truetype');
+    src: url('./fonts/PFStardust-SmallBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -43,7 +43,7 @@
 
 @font-face {
     font-family: 'PFStardust-Small';
-    src: url('../fonts/PFStardust-SmallExtraBold.ttf') format('truetype');
+    src: url('./fonts/PFStardust-SmallExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
