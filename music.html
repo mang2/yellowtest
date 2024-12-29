@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YellowCottage - Music</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: 'PFStardust';
+            src: url('/yellowtest/YellowCottage/fonts/PFStardust.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        @font-face {
+            font-family: 'PFStardust';
+            src: url('/yellowtest/YellowCottage/fonts/PFStardust-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: block;
+        }
+        * {
+            font-family: 'PFStardust', sans-serif !important;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+    <link rel="stylesheet" href="/yellowtest/YellowCottage/styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html" data-translate="home">Home</a></li>
-                <li><a href="music.html" data-translate="music">Music</a></li>
-                <li><a href="tour.html" data-translate="tour">Tour</a></li>
-                <li><a href="video.html" data-translate="video">Video</a></li>
-                <li><a href="shop.html" data-translate="shop">Shop</a></li>
-                <li><a href="contact.html" data-translate="contact">Contact</a></li>
+                <li><a href="/yellowtest/YellowCottage/index.html">Home</a></li>
+                <li><a href="/yellowtest/YellowCottage/music.html">Music</a></li>
+                <li><a href="/yellowtest/YellowCottage/tour.html">Tour</a></li>
+                <li><a href="/yellowtest/YellowCottage/video.html">Video</a></li>
+                <li><a href="/yellowtest/YellowCottage/shop.html">Shop</a></li>
+                <li><a href="/yellowtest/YellowCottage/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -23,12 +44,12 @@
     <main>
         <section id="music">
             <div class="section-header">
-                <a href="index.html" class="back-button">&lt;--</a>
+                <a href="/yellowtest/YellowCottage/index.html" class="back-button">&lt;--</a>
                 <h2 data-translate="music">Music</h2>
             </div>
             <div class="album-grid">
                 <div class="album-item">
-                    <img src="images/test.jpg" alt="BLUE FOR US">
+                    <img src="/yellowtest/YellowCottage/images/test.jpg" alt="BLUE FOR US">
                     <h3>BLUE FOR US</h3>
                     <p class="album-year">2019</p>
                     <div class="track-list">
@@ -51,8 +72,8 @@
         <a href="#" data-translate="privacyPolicy">Privacy Policy</a>
     </footer>
 
-    <script src="js/language.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/spotify-tracks.js"></script>
+    <script src="/yellowtest/YellowCottage/js/language.js"></script>
+    <script src="/yellowtest/YellowCottage/js/scroll.js"></script>
+    <script src="/yellowtest/YellowCottage/js/spotify-tracks.js"></script>
 </body>
 </html> 
