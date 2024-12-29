@@ -65,34 +65,54 @@ main {
 section {
     background: #fff;
     padding: 4rem 2rem;
-    border-bottom: 3px dashed #FCEDBE;
+    margin: 0;
+    border-bottom: none;
 }
 
 /* index 페이지의 섹션 배경색 */
-.home #music {
+.home section {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 0 2rem;
+}
+
+.home section:last-child {
+    border-bottom: none;
+}
+
+/* index 페이지의 타이틀 배경색 */
+.home #music h2 {
     background-color: #E8F5E9;
-    border-bottom: 3px dashed #fff;
+    padding: 1rem 2rem;
+    margin: 0 -2rem 3rem -2rem;
+    border-radius: 0;
 }
 
-.home #video {
+.home #video h2 {
     background-color: #FFEBEE;
-    border-bottom: 3px dashed #fff;
+    padding: 1rem 2rem;
+    margin: 0 -2rem 3rem -2rem;
+    border-radius: 0;
 }
 
-.home #tour {
+.home #tour h2 {
     background-color: #E1F5FE;
-    border-bottom: 3px dashed #fff;
+    padding: 1rem 2rem;
+    margin: 0 -2rem 3rem -2rem;
+    border-radius: 0;
 }
 
-.home #shop {
+.home #shop h2 {
     background-color: #F3E5F5;
-    border-bottom: 3px dashed #fff;
+    padding: 1rem 2rem;
+    margin: 0 -2rem 3rem -2rem;
+    border-radius: 0;
 }
 
 /* 기존의 짝수 섹션 스타일 제거 */
 section:nth-child(even) {
     background: inherit;
-    border-bottom: 3px dashed #fff;
+    border-bottom: none;
 }
 
 section:last-child {
@@ -102,7 +122,7 @@ section:last-child {
 h2 {
     font-family: 'PFStardust', sans-serif;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 /* Grid Layout */
@@ -112,7 +132,8 @@ h2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    padding: 2rem;
+    padding: 0;
+    margin-bottom: 3rem;
 }
 
 /* Subscription Form Styles */
@@ -498,21 +519,36 @@ textarea {
 /* Section Link Styles */
 .section-link {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 0;
+    padding-bottom: 3rem;
 }
 
+/* View More 버튼 기본 스타일 */
 .view-more {
     display: inline-block;
     padding: 0.5rem 1.5rem;
-    background: #FCEDBE;
     color: #333;
     text-decoration: none;
-    transition: background 0.3s ease;
-    font-family: 'PFStardust', sans-serif;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: transparent;
 }
 
-.view-more:hover {
-    background: #FED46E;
+/* 각 섹션별 View More 버튼 색상 제거 */
+.home #music .view-more,
+.home #video .view-more,
+.home #tour .view-more,
+.home #shop .view-more {
+    background-color: transparent;
+}
+
+/* 호버 효과 수정 */
+.home #music .view-more:hover,
+.home #video .view-more:hover,
+.home #tour .view-more:hover,
+.home #shop .view-more:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 /* Tour Item Styles */
@@ -705,32 +741,31 @@ h1, h2, h3, h4, h5, h6,
 .section-header {
     padding: 2rem;
     margin-bottom: 3rem;
-    margin-top: -4rem;
     margin-left: -2rem;
     margin-right: -2rem;
     box-sizing: border-box;
     position: relative;
     left: 0;
-    width: calc(100% + 4rem);  /* section의 padding을 고려한 너비 */
+    width: calc(100% + 4rem);
 }
 
 /* 각 페이지별 타이틀 배경색 커스터마이징 */
 #music .section-header {
-    background-color: #E8F5E9;  /* 연한 초록색 */
+    background-color: #E8F5E9;
 }
 
 #video .section-header {
-    background-color: #FFEBEE;  /* 연한 빨간색 (contact와 동일) */
+    background-color: #FFEBEE;
 }
 
 #tour .section-header {
-    background-color: #E1F5FE;  /* 하늘색 */
+    background-color: #E1F5FE;
 }
 
 #shop .section-header {
-    background-color: #F3E5F5;  /* 연한 보라색 */
+    background-color: #F3E5F5;
 }
 
 #contact .section-header {
-    background-color: #FFEBEE;  /* 연한 빨간색 */
+    background-color: #FFEBEE;
 } 
