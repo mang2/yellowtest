@@ -1,8 +1,19 @@
-/* Reset */
+/* 폰트 정의를 최상단에 배치 */
+@font-face {
+    font-family: 'PFStardust';
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/PFStardust.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/PFStardust.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;  /* swap에서 block으로 변경 */
+}
+
+/* 모든 요소에 폰트 적용 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'PFStardust', sans-serif !important;
 }
 
 body {
