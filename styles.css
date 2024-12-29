@@ -1,11 +1,52 @@
 /* 폰트 정의를 최상단에 배치 */
+/* 큰 글씨체 */
 @font-face {
     font-family: 'PFStardust';
-    src: url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/PFStardust.woff2') format('woff2'),
-         url('https://cdn.jsdelivr.net/gh/webfontworld/sandbox/PFStardust.woff') format('woff');
+    src: url('../fonts/PFStardust.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-display: block;  /* swap에서 block으로 변경 */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PFStardust';
+    src: url('../fonts/PFStardust-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PFStardust';
+    src: url('../fonts/PFStardust-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 작은 글씨체 */
+@font-face {
+    font-family: 'PFStardust-Small';
+    src: url('../fonts/PFStardust-Small.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PFStardust-Small';
+    src: url('../fonts/PFStardust-SmallBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PFStardust-Small';
+    src: url('../fonts/PFStardust-SmallExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* 모든 요소에 폰트 적용 */
@@ -671,5 +712,12 @@ h1, h2, h3, h4, h5, h6,
     .track-list li,
     .back-button {
         font-family: 'PFStardust', sans-serif !important;
+    }
+}
+
+/* 모바일 폰트 강제 적용 */
+@media screen and (max-width: 768px) {
+    * {
+        font-family: 'PFStardust', 'PFStardust-Small', sans-serif !important;
     }
 } 
